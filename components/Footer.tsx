@@ -11,14 +11,14 @@ const Footer = () => {
           <div className="flex flex-col flex-1">
             <span className="setion-title-underline mb-10">
               <span className="relative section-title text-4xl">
-                Ġet în Ťouch.
+                {`Ġet în Ťouch.`}
               </span>
             </span>
 
             <p className="italic">
-              Ready for a coding adventure?. Shoot me a message via email or hit
+              {`Ready for a coding adventure?. Shoot me a message via email or hit
               me up on social media – can't wait to create something cool
-              together!
+              together!`}
             </p>
           </div>
 
