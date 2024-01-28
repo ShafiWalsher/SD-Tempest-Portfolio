@@ -29,7 +29,7 @@ const Footer = () => {
               </p>
 
               <p className="font-medium mt-10">
-                {`\{ `}
+                {"{"}
                 <Link
                   href="mailto: shafiwalsher@gmail.com"
                   target="_blank"
@@ -37,7 +37,7 @@ const Footer = () => {
                 >
                   shafiwalsher@gmail.com
                 </Link>
-                {` \}`}
+                {"}"}
               </p>
 
               <div className="mt-3 flex gap-6">

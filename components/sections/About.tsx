@@ -28,21 +28,20 @@ const About = () => {
             {/* About Info */}
             <div className="flex flex-col flex-1 gap-10 justify-center">
               <p>
-                Hello I'm
+                {`Hello I'm`}
                 <span className="font-redressed text-3xl text-dutch-white">
-                  Shafi.
+                  {`Shafi.`}
                 </span>
-                {/* <span className="special-font italic">&</span>  */}
-                Ever since I was 19, I've been on a quest to build brands that
+                {`Ever since I was 19, I've been on a quest to build brands that
                 stand out and make an impact. Always looking for new creative
                 challenges and opportunities. Join me on my journey as I explore
                 the world of design and share my stories and insights along the
-                way.
+                way.`}
               </p>
 
               <div className="flex flex-col gap-4 justify-center items-center lg:items-start">
                 <h2 className="font-bold text-2xl text-slate-50/50">
-                  {"{ . . . What I Know }"}
+                  {`{ . . . What I Know }`}
                 </h2>
 
                 <div className="flex flex-wrap gap-4 justify-center items-start">
