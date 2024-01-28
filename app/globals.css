@@ -1,33 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  /* Section Styles General */
+  .section-container {
+    @apply max-w-[960px] mx-auto drop-shadow-lg py-20 min-h-dvh relative text-light flex;
   }
-}
+  .section-content_wrapper {
+    @apply w-full flex-1 flex flex-col justify-center gap-10 px-10 lg:p-0;
+  }
+  .bg-section-word {
+    @apply absolute w-full -top-10 text-center font-extralight text-[120px] sm:text-[160px] md:text-[180px] lg:text-[240px] text-gray-300/5 pointer-events-none  -z-20;
+  }
+  .section-sub-title {
+    @apply text-dutch-white text-lg pb-4 font-bold;
+  }
+  .section-title {
+    @apply text-5xl font-extrabold capitalize shadow-lg text-white relative;
+  }
+  .section-title_wrapper {
+    @apply w-full md:flex items-center justify-start;
+  }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+  .setion-title-underline {
+    @apply before:block before:absolute before:bottom-0 before:w-[140px] before:h-3 before:bg-rose-red relative inline-block;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .section_content {
+    @apply flex flex-col lg:flex-row justify-center items-center gap-5;
+  }
+  /* Hero Section Styles */
+  .hero-section {
+    @apply min-h-screen w-full py-16 bg-hero6 bg-cover flex flex-1;
+  }
+
+  .text-hero {
+    @apply flex flex-col justify-center items-center my-auto h-full;
+  }
+
+  .special-font-logo {
+    font-family: "Fleur De Leah", cursive;
+  }
+
+  .dot-symbol {
+    @apply text-dutch-white;
+  }
+
+  /* Mouse Scroll Svg */
+  .mouse-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, -25px);
+    -ms-transform: translate(-50%, -25px);
+    transform: translate(-50%, -25px);
+    display: inline-block;
+    height: 52px;
+  }
+
+  .mouse-icon svg {
+    height: 100%;
+    width: auto;
+  }
+
+  .mouse-icon svg .cursor {
+    -webkit-animation: mouseCursorNew;
+    animation: mouseCursorNew;
+    -webkit-animation-duration: 1.6s;
+    animation-duration: 1.6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  @-webkit-keyframes mouseCursorNew {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: translate(0, 10px);
+      transform: translate(0, 10px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes mouseCursorNew {
+    0% {
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0);
+      opacity: 1;
+    }
+
+    100% {
+      -webkit-transform: translate(0, 10px);
+      transform: translate(0, 10px);
+      opacity: 0;
+    }
   }
 }
