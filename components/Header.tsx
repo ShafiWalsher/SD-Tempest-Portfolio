@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex justify-center items-center gap-10">
           {navLinks.map((item) => (
             <Link key={item.label} href={item.href} className="">
-              // {item.label}
+              {`// ${item.label}`}
             </Link>
           ))}
         </div>

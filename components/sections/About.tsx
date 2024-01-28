@@ -28,10 +28,10 @@ const About = () => {
             {/* About Info */}
             <div className="flex flex-col flex-1 gap-10 justify-center">
               <p>
-                Hello I'm{" "}
+                Hello I'm
                 <span className="font-redressed text-3xl text-dutch-white">
                   Shafi.
-                </span>{" "}
+                </span>
                 {/* <span className="special-font italic">&</span>  */}
                 Ever since I was 19, I've been on a quest to build brands that
                 stand out and make an impact. Always looking for new creative
@@ -42,7 +42,7 @@ const About = () => {
 
               <div className="flex flex-col gap-4 justify-center items-center lg:items-start">
                 <h2 className="font-bold text-2xl text-slate-50/50">
-                  {`{ . . . What I Know }`}
+                  {"{ . . . What I Know }"}
                 </h2>
 
                 <div className="flex flex-wrap gap-4 justify-center items-start">
