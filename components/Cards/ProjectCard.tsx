@@ -23,7 +23,7 @@ const ProjectCard = ({ project, isMiddleCard }: Props) => {
     <Card
       className={`${
         isMiddleCard ? "md:-mt-4 mt-0" : "mt-0"
-      } bg-dark-2 rounded-xl p-0 h-full md:h-[296px]  cursor-pointer`}
+      } bg-dark-2 border-gray-1 rounded-xl p-0 h-full md:h-[296px]  cursor-pointer`}
     >
       <CardHeader className="p-0">
         <div className="w-full h-full relative">
