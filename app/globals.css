@@ -36,7 +36,7 @@
   }
   /* Hero Section Styles */
   .hero-section {
-    @apply min-h-screen w-full py-16 bg-hero6 bg-cover flex flex-1;
+    @apply min-h-screen w-full py-16 bg-hero6 bg-cover bg-bottom flex flex-1;
   }
 
   .text-hero {
@@ -49,6 +49,11 @@
 
   .dot-symbol {
     @apply text-dutch-white;
+  }
+
+  /* Project Card */
+  .project-card_btn {
+    @apply bg-dark-1 font-semibold px-6 py-1 flex flex-1 w-full gap-2 !important;
   }
 
   /* Mouse Scroll Svg */

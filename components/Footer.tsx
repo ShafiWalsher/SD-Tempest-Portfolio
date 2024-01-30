@@ -33,6 +33,7 @@ const Footer = () => {
                 <Link
                   href="mailto: shafiwalsher@gmail.com"
                   target="_blank"
+                  rel="noreferrer noopener"
                   className="underline decoration-wavy decoration-gray-1"
                 >
                   shafiwalsher@gmail.com
@@ -47,6 +48,7 @@ const Footer = () => {
                     href={item.href}
                     className="cursor-pointer"
                     target="_blank"
+                    rel="noreferrer noopener"
                   >
                     <Image
                       key={item.alt}

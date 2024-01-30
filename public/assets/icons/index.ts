@@ -8,6 +8,9 @@ import server from "./server.svg";
 import database from "./database.svg";
 import devops from "./devops.svg";
 
+import live from "./live.svg";
+import github_alt from "./github-alt.svg";
+
 export {
   github,
   instagram,
@@ -17,4 +20,6 @@ export {
   server,
   database,
   devops,
+  live,
+  github_alt,
 };

@@ -19,8 +19,10 @@ const Portfolio = () => {
             {recentWork.map((project, index) => (
               <ProjectCard
                 key={project.title + index}
-                {...project}
-                isMiddleCard={(index + 1) % 3 === 2}
+                project={project}
+                isMiddleCard={
+                  recentWork.length > 4 ? (index + 1) % 3 === 2 : false
+                }
               />
             ))}
           </div>
